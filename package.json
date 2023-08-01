@@ -88,7 +88,7 @@
     "build": "yarn clean && cross-env NODE_ENV=production tsup --splitting",
     "release": "release publish",
     "prepublishOnly": "yarn build && yarn test",
-    "prepare": "yarn build"
+    "postinstall": "yarn build"
   },
   "files": [
     "lib",
